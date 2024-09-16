@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image to PDF</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h1 class="text-center mb-4">Image to PDF Generator</h1>
+          <div class="mb-3">
+            <label for="imageUpload" class="form-label">Select Images</label>
+            <input
+              type="file"
+              id="imageUpload"
+              class="form-control"
+              multiple
+              accept="image/*"
+            />
+          </div>
+          <div
+            id="imageContainer"
+            class="d-flex flex-wrap justify-content-center gap-3 mb-4"
+          ></div>
+          <div class="text-center">
+            <button id="generatePdfButton" class="btn btn-primary">
+              Generate PDF
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+#imageContainer img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #dee2e6;
+  border-radius: 5px;
+  cursor: move;
+  transition: transform 0.2s;
+}
+
+#imageContainer img:hover {
+  transform: scale(1.05);
+}
+
+.remove-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.remove-btn:hover {
+  background-color: red;
+}
